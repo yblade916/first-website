@@ -1,9 +1,23 @@
-<div style="max-width: 800px; margin: auto;">
-  <div style="position: relative; width: 100%; padding-bottom: 40%; height: 0; overflow: hidden;">
-    <iframe src="https://online.flipbuilder.com/yblade/sifu/" 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-            seamless="seamless" scrolling="no" frameborder="0" 
-            allowtransparency="true" allowfullscreen="true">
-    </iframe>
-  </div>
+<style>
+  .flipbook-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 40%; /* default for desktop */
+    overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .flipbook-container {
+      padding-bottom: 70%; /* taller for portrait phones */
+    }
+  }
+</style>
+
+<div class="flipbook-container">
+  <iframe src="https://online.flipbuilder.com/yblade/sifu/" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          seamless="seamless" scrolling="no" frameborder="0" 
+          allowtransparency="true" allowfullscreen="true">
+  </iframe>
 </div>
